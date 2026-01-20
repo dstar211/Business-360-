@@ -54,7 +54,7 @@ Month-over-month (LM) comparison is included for all KPIs.
 - A small number of customers contribute significantly to total sales
 
 ---
-![business](./images/medical_plots.png)
+![business](https://github.com/dstar211/Business-360-/blob/main/business%202.jpg)
 
 
 ### 2️⃣ Product & Category Performance Page
@@ -70,7 +70,8 @@ Month-over-month (LM) comparison is included for all KPIs.
 - Some products show high sales but lower margins due to discounts
 - Monthly trends highlight peak sales periods for specific categories
 
----
+--- 
+![business](https://github.com/dstar211/Business-360-/blob/main/buiness%203.jpg)
 
 ### 3️⃣ Yearly, Regional & Payment Analysis Page
 **Key Features**
@@ -86,6 +87,7 @@ Month-over-month (LM) comparison is included for all KPIs.
 - Sales are evenly split across payment modes, reducing dependency risk
 
 ---
+![business](https://github.com/dstar211/Business-360-/blob/main/business%204.jpg)
 
 ## 🔄 Project Workflow
 ```text
@@ -98,3 +100,23 @@ Python (Cleaning, Feature Engineering)
 Power BI (DAX Measures & Visuals)
         ↓
 Interactive Business 360 Dashboard
+
+/* OBJECTIVE: Calculate Net Sales and Profit Margin by Region 
+  PROJECT: Business 360 
+*/
+
+SELECT 
+    dim_customer.region,
+    ROUND(SUM(fact_sales.net_sales), 2) AS total_net_sales,
+    ROUND(AVG(fact_sales.margin_pct), 4) AS avg_margin
+FROM 
+    gdb041.fact_sales_monthly AS fact_sales
+JOIN 
+    gdb041.dim_customer AS dim_customer
+    ON fact_sales.customer_code = dim_customer.customer_code
+WHERE 
+    fact_sales.fiscal_year = 2021
+GROUP BY 
+    dim_customer.region
+ORDER BY 
+    total_net_sales DESC;
