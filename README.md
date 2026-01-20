@@ -34,11 +34,11 @@ To build a **360° interactive dashboard** that helps stakeholders:
 | Total Orders | 5K |
 
 Month-over-month (LM) comparison is included for all KPIs.
-
+![business1](https://github.com/dstar211/Business-360-/blob/main/business%20360%201.jpg)
 ---
 
 ## 📊 Dashboard Pages & Insights 
-![business](./images/medical_plots.png)
+
 
 ### 1️⃣ Sales Overview Page
 **Key Features**
@@ -54,6 +54,8 @@ Month-over-month (LM) comparison is included for all KPIs.
 - A small number of customers contribute significantly to total sales
 
 ---
+![business](./images/medical_plots.png)
+
 
 ### 2️⃣ Product & Category Performance Page
 **Key Features**
