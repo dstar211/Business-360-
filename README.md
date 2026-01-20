@@ -1,1 +1,98 @@
-# Business-360-
+#  Business 360 – Sales, Profit & Performance Dashboard
+
+Business 360 is an **end-to-end Sales Analytics project** that provides a complete view of business performance across **sales, profit, quantity, orders, margins, customers, products, regions, and payment modes** using **Power BI, SQL, and Python**.
+
+This project is designed for **Data Analyst / Business Analyst** roles and focuses on real-world business KPIs and decision-making insights.
+
+---
+
+## 🔹 Project Objective
+To build a **360° interactive dashboard** that helps stakeholders:
+- Monitor overall business performance
+- Identify top & bottom products and customers
+- Analyze category, region, and city-wise sales
+- Understand discount impact on profit margins
+- Track trends by month, week, and year
+
+---
+
+## 🔹 Tools & Technologies
+- **Power BI** – Dashboard design, DAX measures
+- **SQL** – Data aggregation & analysis
+- **Python (Pandas)** – Data cleaning & transformation
+- **Excel / CSV** – Raw data source
+
+---
+
+## 🔹 Key KPIs
+| KPI | Value |
+|----|------|
+| Total Sales | 534M |
+| Total Profit | 80M |
+| Profit Margin | 15% |
+| Total Quantity | 15K |
+| Total Orders | 5K |
+
+Month-over-month (LM) comparison is included for all KPIs.
+
+---
+
+## 📊 Dashboard Pages & Insights 
+![business](./images/medical_plots.png)
+
+### 1️⃣ Sales Overview Page
+**Key Features**
+- Total Sales, Profit, Quantity, Orders & Profit Margin
+- City-wise total sales with highest profit product
+- Region-wise sales contribution
+- Top & Bottom customers by sales
+- Weekly insights: Avg Discount vs Profit Margin
+
+**Business Insights**
+- Sales are well distributed across regions, with **North & East contributing the highest**
+- High discounts on specific days reduce profit margins
+- A small number of customers contribute significantly to total sales
+
+---
+
+### 2️⃣ Product & Category Performance Page
+**Key Features**
+- Top 10 products by total profit and profit margin
+- Top & Bottom sub-category sales
+- Category-wise sales and average discount
+- Category quantity vs total orders
+- Best-selling category by month
+
+**Business Insights**
+- **Home Decor and Furniture** generate the highest sales
+- Some products show high sales but lower margins due to discounts
+- Monthly trends highlight peak sales periods for specific categories
+
+---
+
+### 3️⃣ Yearly, Regional & Payment Analysis Page
+**Key Features**
+- Year-wise sales & profit comparison
+- Top & Bottom categories by sales
+- Region-wise profit and quantity analysis
+- Payment mode contribution (COD, Net Banking, etc.)
+- Monthly sales & quantity trends
+
+**Business Insights**
+- Strong growth observed in recent years
+- **North region** leads in profit contribution
+- Sales are evenly split across payment modes, reducing dependency risk
+
+---
+
+## 🔄 Project Workflow
+```text
+Raw Data (Excel / CSV)
+        ↓
+SQL (Joins, Aggregations, Grouping)
+        ↓
+Python (Cleaning, Feature Engineering)
+        ↓
+Power BI (DAX Measures & Visuals)
+        ↓
+Interactive Business 360 Dashboard
